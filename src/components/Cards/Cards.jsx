@@ -33,20 +33,27 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                         <Typography variant="h5">
                             <CountUp
                                 start={0}
-                                end={confirmed.value}
+                                end={recovered.value}
                                 duration={2.5}
                                 separator=","
                             />
                         </Typography>
-                        <Typography color="textSecondary">REAL DATE</Typography>
+                        <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                         <Typography variant="body2">Number of recoveries from COVID-19</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card}>
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>Deaths</Typography>
-                        <Typography variant="h5">REAL DATA</Typography>
-                        <Typography color="textSecondary">REAL DATE</Typography>
+                        <Typography variant="h5">
+                            <CountUp
+                                start={0}
+                                end={deaths.value}
+                                duration={2.5}
+                                separator=","
+                                />
+                        </Typography>
+                        <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                         <Typography variant="body2">Number of deaths caused by COVID-19</Typography>
                     </CardContent>
                 </Grid>
