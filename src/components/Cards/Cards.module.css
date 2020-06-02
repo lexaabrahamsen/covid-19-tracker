@@ -4,20 +4,29 @@
 
 .card {
     margin: 0 2% !important;
+    box-shadow: 10px 10px 10 rgba(139, 139, 139, .17) !important;
+
+    
 }
 
 .infected {
-    border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+    border-bottom: 10px solid rgba(0, 114, 265, 1.0);
+    box-shadow: 10px 10px 10px rgba(139, 139, 139, .17) !important;
+
 
 }
 
 .recovered {
-    border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+    border-bottom: 10px solid rgba(38, 191, 189, 1.0);
+    box-shadow: 10px 10px 10px rgba(139, 139, 139, .17) !important;
+
     
 }
 
 .deaths {
-    border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+    border-bottom: 10px solid rgba(239, 71, 58, 1);
+    box-shadow: 10px 10px 10px rgba(139, 139, 139, .17) !important;
+
     
 }
 
